@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <STYle>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding-block-start: 10px;
+            
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .numTotal {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        #coluna_pop {
+            width: 50px;
+        }
+
+
+        /*essa pseudo class diz 
+        todo tr que estiver dentro 
+        de tbody, o primeiro tr colorido
+        o segundo nao, o terceiro sim, o quarto nao assim em diante.
+        este é o efeito zebrado
+        podemos tambem colocor valores 3n, 4n, 5n...*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        
+
+    </STYle>
+</head>
+<body>
+    <h1>Anatomia de tabelas grandes</h1>
+    <h2>Efeito zebrado</h2>
+
+    <table>
+        <caption>Populaçao das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" id="coluna_pop">Populaçao</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+             <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+             <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 284 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+
+                <!--SCOPE com valor "row"
+                significa que 
+                os dados da th estao na
+                mesma linha que o mesmo th-->
+                <th scope="row">Total de habitantes</th>
+
+                <td class="numTotal"><strong>1.000.0000.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

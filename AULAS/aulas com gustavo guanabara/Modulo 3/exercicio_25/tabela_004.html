@@ -34,15 +34,30 @@
             text-align: center;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        #coluna_pop {
+            width: 50px;
+        }
+
     </STYle>
 </head>
 <body>
     <h1>Anatomia de tabelas grandes</h1>
+    <h2>Caption e Escopo de titulos em tabelas</h2>
 
     <!--tags semantica para tabelas
     Anatomia duma tabela semantica
     
     table
+
+        caption     é a legenda da tabela
+
         thead
             tr
                 td      - td representa dado
@@ -56,12 +71,20 @@
                 td      - td representa dado
                 th      - th representa titulo
     -->
-    
+
     <table>
+
+        <caption>Populaçao das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+
+                <!--SCOPE com valor "col"
+                significa que 
+                os dados da th estao na
+                mesma coluna que o mesmo th-->
+                <th scope="col">Estado</th>
+                <th scope="col" id="coluna_pop">Populaçao</th>
             </tr>
 
         </thead>
@@ -107,13 +130,17 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+
+                <!--SCOPE com valor "row"
+                significa que 
+                os dados da th estao na
+                mesma linha que o mesmo th-->
+                <th scope="row">Total de habitantes</th>
+
                 <td class="numTotal"><strong>1.000.0000.000</strong></td>
             </tr>
         </tfoot>
     </table>
-
-
 
 </body>
 </html>
