@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>mesclagem de celulas</h1>
+
+    <!--
+        colspan: é para mesclar td das linhas
+
+        rowspan: é para mesclar td das colunas
+    -->
+    <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td rowspan="3">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+    </table>
+    <pre>
+
+
+    </pre>
+    <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td colspan="2">M</td>
+            </tr>
+    </table>
+
+      <pre>
+
+    </pre>
+
+    <h1>desafio numero 1</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <pre>
+
+    </pre>
+
+    <h1>desafio numero 2</h1>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="5">B</td>
+        </tr>
+        <tr>
+            <td rowspan="5">C</td>
+        </tr>
+         <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+         <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+         <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+         <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <pre>
+
+    </pre>
+
+    <h1>desafio numero 3</h1>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="5">B</td>
+        </tr>
+        <tr>
+            <td rowspan="5">C</td>
+        </tr>
+         <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+         <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+         <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+         <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+
+
+    
+</body>
+</html>
