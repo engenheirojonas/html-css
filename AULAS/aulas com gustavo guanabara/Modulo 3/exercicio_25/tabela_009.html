@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            }
+        col.nome {
+            background-color: yellow;
+        }
+        col.sexo {
+            background-color: rgb(32, 236, 100);
+        }
+        .grupo_idade_profissao {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+
+        <!--Colgroup
+        serve para colocar mesmas propriedades para uma coluna inteira
+        -->
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+
+            <!--podemos definir uma mesma cor ou propriedades para duas colunas que se seguem-->
+            <col class="grupo_idade_profissao" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <th>Mari</th>
+            <th>F</th>
+            <th>25</th>
+            <th>Jornalista</th>
+        </tr>
+        <tr>
+            <th>Claudio</th>
+            <th>M</th>
+            <th>42</th>
+            <th>Professor</th>
+        </tr>
+        <tr class="destaque">
+            <th>Gustavo</th>
+            <th>M</th>
+            <th>42</th>
+            <th>Professor</th>
+        </tr>
+        <tr>
+            <th>Helo</th>
+            <th>M</th>
+            <th>19</th>
+            <th>Vendedor</th>
+        </tr>
+        <tr>
+            <th>Maria</th>
+            <th>F</th>
+            <th>39</th>
+            <th>Médica</th>
+        </tr>
+        <tr>
+            <th>otavo</th>
+            <th>M</th>
+            <th>22</th>
+            <th>Nutricionista</th>
+        </tr>
+    </table>
+</body>
+</html>
