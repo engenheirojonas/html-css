@@ -11,12 +11,24 @@
             
         }
         th, td {
-            border: 1px solid gray;
+            border: 1px solid rgb(0, 0, 0);
         }
         caption {
             font-size: 1.3em;
             font-weight: bold;
             padding: 10px;
+        }
+        .clr {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .txt_centro {
+            text-align: center;
+        }
+        #txt_left {
+            text-align: left;
         }
 
     </style>
@@ -38,7 +50,7 @@
                 E para uma Linha mesclada representar  de varias linhas o valor de SCOPE tem de ser
                 "rowgroup",
                 -->
-                
+
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
                 <th colspan="3" scope="colgroup">Filmes</th>
@@ -88,5 +100,88 @@
 
         </tbody>
     </table>
+
+    <pre>
+
+    </pre>
+
+    <h1>Desafio</h1>
+    <table>
+        <tr>
+            <th class="clr" rowspan="2">Area</th>
+            <th class="clr" rowspan="2">Disciplina</th>
+            <th class="clr" colspan="2">Notas</th>
+            <th class="clr" rowspan="2">Media</th>
+        </tr>
+        <tr>
+            <th class="clr">Notas 1</th>
+            <th class="clr">Notas 2</th>
+        </tr>
+        <tr>
+            <td rowspan="5" class="txt_centro">Exatas</td>
+            <td>Matematica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="clr" colspan="4" id="txt_left">Médias de Exatas</th>
+            <th class="clr">0.0</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="txt_centro">Humanas</td>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="clr" colspan="4" id="txt_left">Médias de humanas</th>
+            <th class="clr">0.0</th>
+        </tr>
+
+
+
+           
+            
+
+        </tr>
+
+
+    </table>
+
+
+
+
 </body>
 </html>
