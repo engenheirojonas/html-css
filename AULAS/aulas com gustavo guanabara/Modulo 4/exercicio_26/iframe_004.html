@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+    Usando um só iframe com muitas fontes internas
+    -->
+
+    <h1>Faça uma escolha para o teu Iframe</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+    </p>
+    <ul>
+
+        <!--Parar fazer aparecer estes links no frame usaremos a propriedade 
+        "Target" com o valor "frame"
+
+        o valor "frame" é o valor da propriedade "name" do tag <iframe>
+        -->
+        <li><a href="iframe_004a.html" target="frame">Primeira pagina</a></li>
+        <li><a href="iframe_004b.html" target="frame">Segunda pagina</a></li>
+        <li><a href="iframe_004c.html" target="frame">Terceira pagina</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+    </p>
+
+    <iframe id="tela" name="frame" src="">
+        infelizmente seu navegador nao é compativel com isso
+    </iframe>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque autem ab expedita iste dicta nobis totam beatae dolore, aut odit illo consequuntur qui quibusdam officia! Consectetur quae nulla aliquid! Ex!
+    </p>
+
+</body>
+</html>
