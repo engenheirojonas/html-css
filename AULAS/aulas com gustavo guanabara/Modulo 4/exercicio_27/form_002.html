@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <!--
+            Importa muito relacionar o teu label ao teu input, usando para a propriedade "for" da tag "label" o mesmo valor do "id" da "tag" input que faz preencher o "label" referenciado.
+            desta vez mesmo quando clicar em "nome do label", voce verá que o seu "input" sera selecionado
+            -->
+            <label for="id_NOME">Nome:</label> 
+            <input type="text" name="NOME" id="id_NOME">
+        </p>
+        <p>
+            <label for="id_Sobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="id_Sobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

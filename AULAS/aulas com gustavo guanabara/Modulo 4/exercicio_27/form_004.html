@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <!--
+    Atributos dos campos ou input de entrada de textos
+    
+    required
+        este atributo obriga preencher um campo ou input de texto
+        é só escrever "required" dentro da tag input de entrada de texto
+    
+    minlength
+        exige um número de caractere minimo
+    
+    maxlength
+        exige um número de caractere minimo
+    
+    size
+        largura do input
+
+    placeholder
+        colocará uma dica dentro do input de texto
+
+    autocomplete
+        no "form" é para ligar o preechimento automatico
+        no "input" é para fazer o navegador ir buscar o seu nome de "usuario" ou "password"
+
+        o valor de autocomplete para "nome ou emails" é "username"
+        e "password" pode ter dois valor "new-password" para guardar novos cadastramentos
+        "curren-password" para processar os cadastramentos já existentes.
+
+        para fazer isso o autocomplete para form deve ter o valor on, só depois definir o autocomplete da tag input
+    -->
+    
+    <h1>Teste de formulario</h1>
+
+    <form action="form_004-cadastro.php" method="get" autocomplete="on">
+        <p>      
+            <label for="id_uso">Usuario:</label> 
+            <input type="text" name="Uso" id="id_uso" required minlength="5" maxlength="15" size="30" placeholder="Nome do Usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="id_pw">Senha:</label>
+            <input type="password" name="pw" id="id_pw" required minlength="8" maxlength="20" placeholder="Password" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
