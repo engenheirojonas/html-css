@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <!-- 
+                os outros tipos de Input
+    radio
+    atençao: o atributo "Name" dos diferentes input do tipo "radio" deve ser o mesmo, apenas os parametros id é que devem ser diferentes
+    podemos por padrao meter apenas um "checked" no atributo deste input
+    tempos apenas uma escolha
+
+    checkbox
+        criamos ligaçao entre a palavra e input do checkbox envelopando a palavra com label.
+        aqui os parametros name podem ser diferentes
+        podemos por padrao meter dois ou mais "checked" no atributo "checked" deste input
+        temos varias escolhas
+    -->
+    
+    <h1>Controles de formularios</h1>
+
+    <form action="form_004-cadastro.php" method="get" autocomplete="on">
+        
+     
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="id_sexo_M"> 
+            <label for="id_sexo_M">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="id_sexo_F" checked> 
+            <label for="id_sexo_F">Feminino</label>
+        </fieldset>
+       
+       <fieldset>
+
+            
+            
+            <legend>Esportes Favoritos</legend>
+
+                <input type="checkbox" name="espofoot" id="id_espofoot" checked> <label for="id_espofoot">Football</label> <br>
+
+                <input type="checkbox" name="espobasket" id="id_espobasket" checked> <label for="id_espobasket">Basketball</label> <br>
+
+                <input type="checkbox" name="esponadar" id="id_esponadar"> <label for="id_esponadar">Natação</label> <br>
+
+                <input type="checkbox" name="espoten" id="id_espoten"> <label for="id_espoten">Ténis</label> <br>
+
+
+       </fieldset>
+         
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
