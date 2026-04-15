@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <!-- 
+    Outros Atributos
+        
+        pattern
+            é um atributo que gere as expressões regulares ou RegEx.
+
+            o valor deste atributo começa com ^ e termina com $ 
+                        o valor seguinte 
+            "^+244 [0-9]{3} [0-9]{3} [0-9]{3}"  
+                            explica
+            o usuario deve inserir primeiro "+244 " "espaço" "3numeros de 0 ate 9" "espaço" "3numeros de 0 ate 9" "espaço" "3numeros de 0 ate 9"
+
+                        outro exemplo
+            "^\d{4,5} \d{4,5}$"
+                            explica
+            o usuario deve inserir primeiro "\" "de 4 a 5 dígito" "de 4 a 5 dígito"
+
+                        outro exemplo
+            "^\(d{4,5}\) \d{4,5}-\d{4,5}$"
+                            explica
+            o usuario deve inserir primeiro "\" "abrir entre-parentes" "inserir de 4 a 5 dígito" "\" "fechar entre-parentes" "\" "de 4 a 5 dígito" "-" "\" "de 4 a 5 dígito"
+
+
+            estudar mais sobre HTML RegEx, mas nenhum deles é suficiente para deixar passar qualquer erro. para isso tens de usar o javascript 
+    -->
+
+    <!--
+    "Fieldset"
+        O uso da tag "Fieldset"
+        serve para agrupar campos
+
+    "legend"
+        é uma tag para colocar titulo no fieldset
+        serve para separa por assunto
+        por exemplo
+            dados pessoais
+            dados financeiros
+            dados de escolaridade
+    -->
+    
+    <h1>Controles de formularios</h1>
+
+    <form action="form_004-cadastro.php" method="get" autocomplete="on">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="id_nome">Nome:</label>
+                    <input type="text" name="Nome" id="id_nome" required minlength="5" maxlength="15" size="30" placeholder="Nome do Aluno" autocomplete="username">
+                </p>
+                <p>
+                    <label for="id_email">email:</label>
+                    <input type="email" name="Email" id="id_email" required size="30" placeholder="email" autocomplete="email">
+                </p>
+                <p>
+                    <label for="id_tel">Telefone:</label>
+                    <input type="tel"
+                    name="Telefone"
+                    id="id_tel"
+                    autocomplete="tel"
+                    required
+                
+                    pattern="^+244 [0-9]{3} [0-9]{3} [0-9]{3}$"
+                    placeholder="+244 XXX XXX XXX"
+                    value="+244">
+                </p>
+        </fieldset>
+         
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
