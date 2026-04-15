@@ -46,7 +46,15 @@
     <form action="form_004-cadastro.php" method="get" autocomplete="on">
         <p>      
             <label for="id_uso">Usuario:</label> 
-            <input type="text" name="Uso" id="id_uso" required minlength="5" maxlength="15" size="30" placeholder="Nome do Usuario" autocomplete="username">
+            <input type="text" 
+                name="Uso" 
+                id="id_uso" 
+                required 
+                minlength="5" 
+                maxlength="15" 
+                size="30" 
+                placeholder="Nome do Usuario" autocomplete="username"
+            >
         </p>
         <p>
             <label for="id_pw">Senha:</label>
@@ -54,7 +62,9 @@
         </p>
         <p>
             <input type="submit" value="Enviar">
-            <input type="submit" value="Limpar">
+
+            <!--o valor "reset" para a propriedade "type" da tag "input" limpa o conteudo dos camapos de textos-->
+            <input type="reset" value="Limpar">
         </p>
     </form>
 

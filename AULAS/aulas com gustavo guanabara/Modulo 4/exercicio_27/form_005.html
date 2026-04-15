@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <!-- 
+    Valores "Type" dos Input
+        "Number" 
+            no campo de inserir textos só será axeito a inserção de números e símbolos + e - também. não irá digitar letras e outros símbolos
+        "month"
+            é para inserçao de Mês
+    
+    Atributos
+        min
+            é o valor mínimo a ser aceite no campo de digitação. Por exemplo "0", logo nao se pode inserir um valor como "-1"
+        max
+            é o valor máximo a ser aceite no campo de digitação. Por exemplo "10", logo nao se pode inserir um valor como "11"
+        step
+            progresso dos numeros ate o numero maximo step="0.1"
+        value
+            um valor de partida por exemplo value="5" ou value="março de 2026" 
+    -->
+    
+    <h1>Teste de formulario</h1>
+
+    <form action="form_004-cadastro.php" method="get" autocomplete="on">
+        <p>      
+            <label for="id_nome">Nome:</label> 
+            <input type="text" name="Nome" id="id_nome" required minlength="5" maxlength="15" size="30" placeholder="Nome do Aluno" autocomplete="username">
+        </p>
+        <p>
+            <label for="id_media">Média:</label>
+            <input type="number" name="Media" id="id_media" required value="5" min="0" max="10" step="0.1">
+        </p>
+        <p>
+            <label for="id_mes">Periodo letivo:</label>
+            <input type="month" name="Mes" id="id_mes" required value="2026-01">
+        </p>
+        <p>
+            <label for="id_dia">Dia da prova:</label>
+            <input type="date" name="dia" id="id_dia" required value="2026-01-01">
+        </p>
+         <p>
+            <label for="id_hora">Horario da prova:</label>
+            <input type="time" name="hora" id="id_hora" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
