@@ -18,7 +18,24 @@
     <h1>Controles de formularios</h1>
 
     <form action="form_004-cadastro.php" method="get" autocomplete="on">
-        
+        <p>
+            <!--cor padrao colocado por nós com atributo value-->
+            <label for="id_cor">Cor:</label>
+            <input type="color" name="cor" id="id_cor" 
+            value="#00ff00">
+        </p>
+        <p>
+            
+            <!--min="1" max="5" value="2"-->
+            <label for="id_nivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="id_nivel" 
+            
+            min="1" max="5" value="2">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
 
     </form>
 
