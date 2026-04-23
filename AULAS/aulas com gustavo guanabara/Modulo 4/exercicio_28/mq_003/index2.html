@@ -1,7 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 
-
-/*as minhas declaraçoes gerais*/
-@media all {
+        @media all {
                 * {
                 padding: 0px;
                 margin: 0px;
@@ -24,20 +29,26 @@
                 }
             }
 
-/*as minhas declaraçoes retrato*/
-@media screen and (orientation:portrait) {
-            
+        /*as minhas declaraçoes retrato*/
+        @media screen and (orientation:portrait) {
+                    
                 body {
-                background-image: url('../img/cev-portrait.jpg') ;
-                background-position: left bottom;
+                background-color: darkgray;
                 }
             }
 
-/*as minhas declaraçoes paisagem*/
-@media screen and (orientation:landscape) {
+        /*as minhas declaraçoes paisagem*/
+        @media screen and (orientation:landscape) {
 
                     body {
-                    background: url('../img/cev-landscape.jpg');
-                    background-position: left bottom;
+                    background-color: darkred;
                     }
             }
+
+    </style>
+</head>
+<body>
+    <h1>Mude a orientaçao do seu telefone ou da janela do teu navegador e a cor vai mudar</h1>
+     
+</body>
+</html>
