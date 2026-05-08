@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+
+    <style>
+
+        /*
+
+        # é simbolo css para 'id' do html
+        . é simbolo css para 'classes' do html
+        : é simbolo css para 'pseudo-class'
+        :: é simbolo css para 'pseudo-element'
+
+        */
+        
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .especial {
+            background-color: darkgray;
+        }
+
+
+                    /*pseudo classes*/
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*Outros pseudo-classes*/
+            /* define a configuraçao dos elementos visitados ficarao em preto vermeto*/
+        a:visited {
+            color: darkred;
+        }
+
+            /* define a configuraçao dos elementos quando sao clicados cnm mouse*/
+        a:active {
+            color: yellow;
+        }
+
+            
+        
+                    /*pseudo-elements*/
+
+            /*coloca algo ou uma palavra antes do seletor*/
+        .especial::before {
+            content:'→';
+        }
+
+            /*coloca algo ou uma palavra depois do seletor*/
+        .especial::after {
+            content:'←';
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>personalizando links com pseudo classes</h1>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repertorio github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">site do curso em video</a></li>
+
+    </ul>
+</body>
+</html>

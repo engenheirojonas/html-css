@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*
+Device Breakpoints
+-----------------------------
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: de 768px até 992px
+desktop: de 992px até 1200px
+tv ou grandes telas: acime de 1200px
+----------------------------------
+*/
+
+/*versao para tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #bfc2c2, #432d52);
+    }
+    section#login {
+        width: 80vw;
+        height: 300px;
+    }
+
+    section#login > div#imagem {
+    /*colocar um elemento a direita ou a esquerda*/
+    float: left;
+
+    /*nao esqueça de meter a largura e cumprimento*/
+    width: 30%;
+    height: 100%;
+    }
+
+    section#login > div#formulario {
+    float: right;
+    width: 70%;
+    text-align: justify;
+    }
+
+    form > div.campo {
+    background-color: #00579a;
+    border: 2px solid #00579a;
+    }
+    
+}
+
+/*versao para desktop, tv ou grandes telas*/
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #bfc2c2, #432d52);
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+    float: right;
+    width: 45%;
+    height: 100%;
+    }
+
+    section#login > div#formulario {
+    float: left;
+    width: 55%;
+    text-align: justify;
+    }
+
+    form > div.campo {
+    background-color: #00579a;
+    border: 2px solid #00579a;
+    }
+
+    div#formulario > h1 {
+    font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+</head>
+<body>
+
+        <h1>ATRIBUTOS</h1>
+
+
+            <!--Atributos 
+                 title: 
+                    especifica uma nota sobre o a palavra de link, uma vez o cursor apontado sobre tal palavre, o titulo que aparece é este atributo title
+                target:
+                    com o valor _blank abre o site acessado numa nova aba
+            -->
+        Acessar a nossa pagina
+        <a href="https://www.youtube.com/" title="Pagina Inicial da Youtube" target="_blank"> Youtube </a>
+
+
+        <p>Atributos boleanos</p>
+                <!--Às vezes você verá atributos escritos sem valores — isso é permitido nos chamados atributos boleanos, e eles podem ter somente um valor, que é geralmente o mesmo nome do atributo. -->
+
+                <!-- o uso do atributo disabled impede que o usuário final insira texto na caixa de entrada --> 
+        <input type="text" disabled /> 
+
+                <!-- O usuário pode inserir texto na caixa de entrada a seguir, pois não contém o atributo disabled --> 
+        <input type="text" />
+
+<hr>
+
+        <h2>Citaçoes</h2>
+
+                <!--HTML também possui recursos disponíveis para marcação de citações. Qual elemento você pode usar? Depende se está marcando um bloco (elemento html: blockquotes) ou uma citação em linha (elemento html: <q> le se quote). -->
+
+        <h3>Marcando Citaçoes</h3>
+
+                <!--O conteúdo do atributo cite parece útil, mas, infelizmente, navegadores, leitores de tela etc. não fazem muito uso dele. Não há como fazer com que o navegador exiba o conteúdo de cite, sem escrever sua própria solução usando JavaScript ou CSS. -->
+        <p>
+                Mais informações podem ser encontradas em <cite>[ISO-0000]</cite>.
+        </p>
+        
+
+            <!--Se uma seção de conteúdo em nível de bloco (seja um parágrafo, vários parágrafos, uma lista, etc.) for citada em algum outro lugar, você deverá envolvê-la em um elemento <blockquote> para indicar isso -->
+    <p> 
+        The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation. 
+    </p> 
+
+<hr>
+
+            <!--O estilo padrão do navegador renderiza isso como um parágrafo recuado,-->
+    <blockquote cite="/pt-BR/docs/Web/HTML/Element/blockquote"> 
+        <p> 
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation. 
+        </p> 
+    </blockquote> 
+
+<hr>
+
+            <!--O estilo padrão do navegador renderiza isso como texto normal entre aspas para indicar uma citação, assim: O elemento de citação — <q> — é "destinado a citações curtas que não exigem quebras de parágrafo".-->
+    <p> 
+        The quote element — <code>&lt;q&gt;</code> — is <q cite="/pt-BR/docs/Web/HTML/Element/q">intended for short quotations that don't require paragraph breaks.</q > 
+    </p> 
+
+<hr>
+
+    <p> 
+        According to the <a href="/pt-BR/docs/Web/HTML/Element/blockquote"> <cite>MDN blockquote page</cite></a>: 
+    </p> 
+ 
+    <blockquote cite="/pt-BR/docs/Web/HTML/Element/blockquote"> 
+        <p> 
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation. 
+        </p> 
+    </blockquote> 
+ 
+    <p> 
+                <!--The code element represents a fragment of computer code. This could be an XML element name, a file name, a computer program, or any other string that a computer would recognize.-->
+        The quote element — <code>&lt;q&gt;</code> — is <q cite="/pt-BR/docs/Web/HTML/Element/q" >intended for short quotations that don't require paragraph breaks.</q > -- <a href="/pt-BR/docs/Web/HTML/Element/q"> <cite>MDN q page</cite></a>. 
+    </p> 
+
+
+</body>
+</html>

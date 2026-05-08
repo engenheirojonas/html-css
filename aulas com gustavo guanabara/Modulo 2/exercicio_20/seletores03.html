@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor pseudo classes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover {
+            color: red;
+        }
+
+
+        /*isto quere dizer o paragrafo que esta dentro da div*/
+        div > p {
+            display: none; /*escondera o paragrado*/
+        }
+
+          div:hover > p  {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o maouse aqui e fara aparecer o paragrafo escondido
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates nulla quae accusantium pariatur quod? Debitis ipsum cumque nostrum, recusandae voluptatibus odit doloribus ex, culpa excepturi perferendis porro error consequatur.
+        </p>
+    </div>
+    <p>visualizar o paragrafo dentro da div</p>
+
+
+</body>
+</html>

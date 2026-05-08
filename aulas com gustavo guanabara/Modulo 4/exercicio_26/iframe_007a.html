@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<style>
+    body {
+        background-color: blue;
+    }
+</style>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida">
+
+        <script>
+            /*isso é javascript
+            
+            esta instruçao significa que cada vez que voce clicar no link "clique em mim", um paragrafo "Para bens, você clicou!" será adicionado*/
+
+            function clicou(){
+                s = window.document.getElementById("saida")
+                s.innerHTML += '<p>Para bens, você clicou!</p>'
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+
+    <!--
+                Output
+    
+    -->
+    
+    <h1>Controles de formularios</h1>
+
+
+
+    <form action="form_004-cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            arraste para selecionar o nivel
+        </p>
+        <p>
+            <label for="id_num1">Nivel:</label>
+
+                <!--um pouco de javascript
+                
+                    < Oninput="id_val.innerHTML = Number(id_num1.value)">
+
+                        isso fará alterar automaticamente o número do output
+
+                        "Oninput" quere dizer, "quando eu digitar neste campo"
+                -->
+
+            <input type="range" name="num1" id="id_num1" min="0" max="10" value="5"
+            
+            Oninput="">
+
+            <output id="id_val">5</output>
+        </p>
+     
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>

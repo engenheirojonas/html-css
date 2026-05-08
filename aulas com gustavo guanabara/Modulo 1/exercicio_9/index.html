@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <H1>Trabalhando nas listas</H1>
+    <h2>listas ordenadas</h2>
+
+        <!--o tipo de lista define a numeraçao da lista com numeros, letras, numeros romanos...-->
+    <ol type="1">
+
+        <li>acordar</li>
+        <li>ligar para joao</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+        <li>ir para o trabalho</li>
+        <li>almoçar</li>
+        <li>ir par o trabalho</li>
+        <li>voltar para casa</li>
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+
+    <h3>começando num numero especifico</h3>
+            <!--o atributo start da ol é numerico e nao alfabeetico-->
+    <ol type="1" start="11">
+        <li>acordar</li>
+        <li>ligar para joao</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+        <li>ir para o trabalho</li>
+        <li>almoçar</li>
+        <li>ir par o trabalho</li>
+        <li>voltar para casa</li>
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+
+    <h2>listas NAO ordenadas</h2>
+
+        <!--opcoes do type do ul : disc, circle, square-->
+    <ul type="square">
+        <li>pao</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>manteiga</li>
+        <li>arroz</li>
+        <li>feijao</li>
+    </ul>
+
+    <h2>ANINHAMENTO</h2>
+
+    <h3>Minhas linguagens favoritas</h3>
+        <!--Aninhamento uma coisa dentro da outra, uma lista dentro da outra-->
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>clipper</li>
+                <li>visual basic</li>
+                <li>fortran</li>
+                <li>delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+
+    <h3>Meus jogos favoritas</h3>
+    <ol>
+        <li>NES</li>
+            <ul type="square">
+                <li>mario</li>
+                    <ul>
+                        <li>mario bros 3</li>
+                        <li>mario:lost levels</li>
+                    </ul>
+                <li>donkey kong</li>
+
+            </ul>
+        <li>PlayStation</li>
+            <ul>
+                <li>Final fantasy</li>
+                <li>castlevania</li>
+            </ul>
+    </ol>
+
+    <h2>listas de definiçao</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcçao para a criaçao do conteudo de um site</dd>
+        <dt>css</dt>
+        <dd>linguagem de marcaçao para a criaçao do design de um site</dd>
+        <dt>javascript</dt>
+        <dd>linguagem de prograçao para a criaçao de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Decoradas</title>
+
+    <style>
+        h1 {
+           
+            padding: 10px;
+
+                /*bordas com uma imagem*/
+
+                    /*Primeiro inserimos esta base*/
+            border: 20px solid transparent; 
+                     /*segundo inserimos o mais importante*/
+            border-image-source: url('Caixa03_Bordas.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+            
+            /* shorthand
+                    border-image: url('Bordas.png') 27 repeat;
+            */
+        }
+
+         h2 {
+            padding: 10px;
+
+            border: 20px solid transparent; 
+            border-image: url('Caixa03_Bordas2.png') 14 repeat;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+
+    <pre>
+
+
+
+        
+    </pre>
+
+    <h2>Novo Teste</h2>
+</body>
+</html>

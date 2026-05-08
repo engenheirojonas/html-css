@@ -1,0 +1,13 @@
+body {
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: Roboto, Arial;
+    display: flex;
+
+    /*centraliza o botao de esquerda pra direita*/
+    justify-content: center;
+
+    /*centraliza botao de cima pra baixo*/
+    align-items: center;
+    background-color: aqua;
+}

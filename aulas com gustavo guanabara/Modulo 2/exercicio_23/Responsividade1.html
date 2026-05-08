@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*as propriedades responsivas no css para os textos*/
+
+            min-width: 200px;
+            max-width: 800px;
+            margin:auto;
+            
+            /*para as imagens devemos usar a tag picture que vao incluir as tags <img> e <source media> no html
+            */  
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quibusdam eum minima. Hic aspernatur enim nesciunt accusamus nemo. Enim assumenda amet neque. Adipisci magnam cum asperiores deserunt error ducimus excepturi!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quae. Repellendus dolorum tempora culpa maiores soluta ipsum error ipsa, corrupti voluptate nesciunt molestias. Labore doloremque corrupti ea amet temporibus consequuntur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut exercitationem voluptates officia alias molestiae ad omnis, debitis modi, est repellendus tenetur laboriosam ab odit reiciendis dolores. Modi, culpa tenetur?
+        </p>
+
+        as propriedades responsivas no css
+        <picture>
+            <source media="(max-width: 800px)" srcset="irina-blok-pq.jpg">
+
+            <img src="irina-blok.jpg" alt="">
+        </picture>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo laboriosam expedita consequuntur ullam, corporis eaque, quisquam enim minus voluptas, quo quia sequi. Voluptate modi voluptates, est adipisci quod ex!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque hic sapiente nihil, necessitatibus, nobis tempore blanditiis ea excepturi ratione sint repudiandae praesentium eaque doloremque quod placeat aut earum optio illo.
+        </p>
+    </main>
+</body>
+</html>

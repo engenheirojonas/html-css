@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioVideo</title>
+
+    <link rel="stylesheet" href="AudioVideo_Style.css">
+
+</head>
+<body>
+    
+    <h1>Testando Audios e Videos</h1>
+
+    <h2>Meus audios</h2>
+
+    <h3>Wangitukulu Nlemvo Wo</h3>
+
+        <audio controls>
+                <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/mp3" /> 
+        </audio> 
+<br>
+    
+    <h3>Heureux Celui qui Craint L'Eternel</h3>
+
+        <audio controls>
+                <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/mp3" /> 
+                
+        </audio>
+        
+    <h3>Minu</h3>
+
+        <audio controls>
+                <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/mp3" /> 
+        </audio> 
+
+        <h3>Luyimbidila Yave</h3>
+
+        <audio controls>
+                <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/mp3" /> 
+        </audio> 
+
+        
+
+    <h2>Audio com dois ou varios formatos</h2>
+    
+            <!--no nosso repertorio devemos ter os dois formatos-->
+        <audio controls> 
+            <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/mp3" /> 
+            <source src="You are Holy (Prince of Peace) - Michael W. Smith.mp3" type="audio/ogg" /> 
+            <p> 
+                se o teu video nao for carregado, entao este navegador
+                 nao suporta o formato do teu video.         
+            </p>
+        </audio> 
+
+
+
+
+<pre>
+
+</pre>
+
+    <h2>Meus Videos</h2>
+<br>
+<pre>
+</pre> 
+
+    <h3>Carregando apenas um formato de um video</h3>
+            <!--a forma padrao-->
+
+        <video src="cachorro dando show no consultório.mp4" controls> 
+            
+                    <!--Isso é chamado de conteúdo alternativo - 
+                    será exibido se o navegador que acessa a página 
+                    não suportar o elemento <video>-->
+            <p> 
+                se o teu video nao for carregado, entao este navegador
+                 nao suporta o formato do teu video.         
+            </p>
+        </video> 
+<br>
+<pre>
+
+</pre>
+
+        <h3>Carregando dois ou mais formatos de um video só para a sua midia
+            ser reproduzido em varios sites
+        </h3>
+<pre>
+</pre>
+
+        <video controls>
+            
+                <!--tiramos o atributo src (source) do <video> tag, mas incluímos os elementos <source> que apontam para suas próprias fontes. Nesse caso, o navegador passará pelo elemento <source> e reproduza o primeiro que ele possui o codec para suportar-->
+
+                <!--Cada elemento <source> também tem um atributo type. Isso é opcional, mas é recomendável que você os inclua - eles contêm o MIME types dos arquivos de vídeo, e os navegadores podem lê-los e pular imediatamente os vídeos que não entendem. Se não estiverem incluídos, os navegadores carregarão e tentarão reproduzir cada arquivo até encontrar um que funcione, consumindo ainda mais tempo e recursos-->
+
+            <source src="cachorro dando show no consultório.mp4" type="video/mp4" /> 
+            <source src="cachorro dando show no consultório.webm" type="video/webm" />
+
+            <p> 
+                se o teu video nao for carregado, entao este navegador
+                 nao suporta o formato do teu video.         
+            </p>
+        </video> 
+
+<br>
+<pre>
+
+</pre>
+
+        <h3>RECUROS DE VIDEO</h3>
+<pre>
+</pre>
+                    <!--Há vários outros recursos que você pode incluir em um vídeo HTML5.
+                    podes investigar los. mas aqui temos por exemplo:
+                            Poster 
+                                é O URL de uma imagem que será exibida antes da reprodução do vídeo. 
+                                Destina-se a ser usado para uma tela inicial ou tela de publicidade 
+                            muted
+                                Faz com que a mídia seja reproduzida com o som desativado por padrão.    
+                    -->
+        <video controls 
+            width="400" 
+            height="400" 
+            muted 
+            poster="ImageVideo.webp"
+        > 
+                <source src="cachorro dando show no consultório.mp4" type="video/mp4" /> 
+                <source src="cachorro dando show no consultório.webm" type="video/webm" />
+                    
+                <p> 
+                    se o teu video nao for carregado, entao este navegador
+                    nao suporta o formato do teu video.
+                </p>
+</video>
+
+
+
+
+</body>
+</html>

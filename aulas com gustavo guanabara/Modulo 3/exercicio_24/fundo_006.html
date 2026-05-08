@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento 4 dos fundos</title>
+    <style>
+        body {
+                /*a primeira soluçao do efeito strecht 
+                   da imagem é esta
+
+           background-color: black;
+           background-image: url('img/wallpaper002.jpg');
+
+           /*o que da efeito strecht da imagem
+           
+           background-position: center top;
+           background-repeat: no-repeat;
+           background-size: 100%; 
+           
+           */
+
+           
+           /* A segunda soluçao do efeito strecht 
+             é essa. E É A MELHORA */
+
+           height:100vh;
+           background-color: black;
+           background-image: url('img/wallpaper002.jpg');
+
+           background-position: center top;
+           background-repeat: no-repeat;
+
+           /*os valores desta declaraçao
+           1. viewport height 100% e width 100% mas neteremos somente 100% 100%
+           2. contain
+           3. cover  /*esse é o perfeito valor
+           */
+
+           background-size: cover;
+
+        
+        }
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin:auto;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>teste de imagem de fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore iste maxime commodi distinctio, aspernatur magnam ipsam eaque, molestias numquam et unde quod est architecto? Nobis beatae voluptas placeat asperiores?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci possimus blanditiis voluptatum enim, non quas alias eos pariatur nihil sapiente id qui ratione! Cum ab quisquam cupiditate neque corporis nobis.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, voluptates doloremque fugiat nostrum accusantium earum, sit, et sed asperiores exercitationem qui in nulla tempore a iste vero ut obcaecati debitis.
+        </p>
+    </main>
+ 
+
+</body>
+</html>

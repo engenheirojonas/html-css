@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </Style>
+</head>
+<body>
+    <!--
+    Método de envio de formulário
+                    Get
+    é o valor do comportamento padrao do envio ou submissão de formulario. mesmo se nao pormos isso, é o que acontece.
+    consiste em enviar o formulario com todos dados submetidos sendo expostos na url do teu navegador.
+
+    usamos este método quando os dados não são sensiveis.
+    usamos get para enviar apenas no maximo 3000 bytes quer seja aproximadamente 3000 letras.
+
+                    Post
+    consiste em enviar o formulario com todos dados submetidos nao expostos na url do teu navegador, mas podemos visualizarlos na devtools(network (digitar os dados com devtools aberto), clicar no ficheiro php, ver aba headers, enrola lá no fim)
+
+    para proteger os dados deves usar metodos avançadas como "aprender sobre https para proteger dados"
+
+    usamos dados sensiveis no formulario (senha, fotos, cartao de credito)
+    e se os teus dados tiverem mais de 3000 bytes
+    e tambem para o envio de arquivos
+    -->
+
+    <h1>Meu primeiro Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            
+            <label for="id_NOME">Nome:</label> 
+            <input type="text" name="NOME" id="id_NOME">
+        </p>
+        <p>
+            <label for="id_Sobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="id_Sobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src:url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/*
+variaveis em css
+
+1. definimos as cores
+
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+
+2. inserimos a pseudo class :root
+cada variel devera ter dois traços no inicio depois nome da variavel depois o valor. exemplo
+--cor1:#c5ebd6;
+
+3. definimos o seletor com a propriedade color ou background-color e o valor serta assim var(--cor)
+
+*/
+
+:root {
+    --cor1:#c5ebd6;
+    --cor2:#83e1ad;
+    --cor3:#3ddc84;
+    --cor4:#2fa866;
+    --cor5:#1a5c37;
+    --cor6:#063d1e;
+
+    --font_PADRAO: 'arial', 'verdana', 'helvetica', 'sans-serif';
+    --font_Destaque:'Bebas Neue';
+    --font_android: 'Android', 'cursive';
+
+}
+
+
+/*o seletor * inclue todos os tags do documento html
+configuraçao global*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+Body {
+    background-color: var(--cor1);
+    font-family: var(--font_PADRAO);
+}
+
+header {
+    background-color: var(--cor5);
+}
+header > h1 {
+    color: white;
+     font-family: var(--font_Destaque);
+}
+
+header > p {
+    color: white;
+}
+
+nav {
+    background-color: var(--cor6);
+}
+
+main {
+    background-color: white;
+}
+
+main h1 {
+    color: white;
+    font-family: var(--font_Destaque);
+}
+
+main h2 {
+    color: var(--cor6);
+    font-family: var(--font_Destaque);
+}
+
+footer {
+    background-color: var(--cor6);
+    color: white;
+}
+
+

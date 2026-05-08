@@ -1,0 +1,140 @@
+
+                /**/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  background-color: #a9a9a9;
+}
+
+
+            /*Cumprimento do main,nav e footer*/
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+                /* || typography */
+h1, h2, h3 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;    /*altura dos objetos labeis ou letras dos paragrafos e listas*/
+}
+
+
+            /* configuraçao geral das partes seguintes */
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 1%;
+}
+
+            /* configuraçao especifica da secçao nav */
+nav {
+  height: 50px;
+  background-color: #ff80ff;
+  display: flex;        /*se tirar isso o input da nav saira pra fora*/
+  margin-bottom: 10px;  /*espaçamento de separaçao entre nav e main*/
+}
+
+nav ul {
+  padding: 0;
+  list-style-type:none;
+  flex: 2;              /*flex é a largura do objeto label ou input*/
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+        /*nav a é para o elemento ancora da lista da nave*/
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+        
+nav form {
+  flex: 1;      /*flex é a largura do objeto input*/
+  display: flex;
+  align-items: center;
+  height: 100%;     /*vai centrar o formulario input nesta nav*/
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 5;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+        /* configuraçao especifica da secçao main */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 100;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+
+    /* configuraçao especifica da secçao footer */
+
+footer {
+  margin-top: 10px;
+}

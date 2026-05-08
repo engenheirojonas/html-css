@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .clr {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .txt_centro {
+            text-align: center;
+        }
+        #txt_left {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+
+                <!--SCOPE
+
+                para uma coluna mesclada representar varias colunas o valor de SCOPE tem de ser
+                "Colgroup",
+
+                E para uma Linha mesclada representar  de varias linhas o valor de SCOPE tem de ser
+                "rowgroup",
+                -->
+
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+              <tr>
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+              <tr>
+                <td>Claudia melo</td>
+                <td>Obvion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+
+
+             <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+              <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+              <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Tax Driver</td>
+                <td>Toy Story</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <pre>
+
+    </pre>
+
+    <h1>Desafio</h1>
+    <table>
+        <tr>
+            <th class="clr" rowspan="2">Area</th>
+            <th class="clr" rowspan="2">Disciplina</th>
+            <th class="clr" colspan="2">Notas</th>
+            <th class="clr" rowspan="2">Media</th>
+        </tr>
+        <tr>
+            <th class="clr">Notas 1</th>
+            <th class="clr">Notas 2</th>
+        </tr>
+        <tr>
+            <td rowspan="5" class="txt_centro">Exatas</td>
+            <td>Matematica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="clr" colspan="4" id="txt_left">Médias de Exatas</th>
+            <th class="clr">0.0</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="txt_centro">Humanas</td>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th class="clr" colspan="4" id="txt_left">Médias de humanas</th>
+            <th class="clr">0.0</th>
+        </tr>
+
+
+
+           
+            
+
+        </tr>
+
+
+    </table>
+
+
+
+
+</body>
+</html>

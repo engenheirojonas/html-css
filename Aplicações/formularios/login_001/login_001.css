@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+
+    height: 70vh;
+}
+
+.login-container {
+   
+    
+    padding: 100px;
+    max-width: 500px;
+
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+
+    float: right;
+
+    margin-right: 10px;
+    margin-top: 50px;
+
+
+}
+
+h1 {
+    font-size: 48px;
+    color: indianred;
+    margin-bottom: 30px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+form button {
+    display: block;
+    width:  100%;
+    padding: 10px;
+    background-color: palevioletred;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #003569;
+}
+
+/*detalhes da imagem*/
+.img {
+    background-image: url('06-54-27-962_96x96.webp');
+
+    background-size: cover;
+    background-position: center center;
+
+    width: 700px;
+    height: 600px;
+
+    float: left;
+
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.img:hover {
+    transform: rotateX(360deg);
+    transition: 2s;
+}

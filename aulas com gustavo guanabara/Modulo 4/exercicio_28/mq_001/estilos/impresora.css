@@ -1,0 +1,29 @@
+/*estilos para impressoras*/
+
+/*Quando voce for a imprimir a pagina do nosso site*/
+
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    /*menu não será exibido*/
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com/noticias';
+}

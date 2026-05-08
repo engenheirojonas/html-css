@@ -1,0 +1,155 @@
+@charset 'UTF-8';
+
+/*todas as demais midias*/
+
+/*typical Device Breakpoints
+
+-----------------------------
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: de 768px até 992px
+desktop: de 992px até 1200px
+tv ou grandes telas: acime de 1200px
+----------------------------------
+*/
+
+
+/*quanto aos screen ou telas inde de 600px até 768px farao parte das regras do mobile first*/
+
+/*tablet: de 768px até 992px*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#id_fone {
+        display: none;
+    }
+
+    img#id_tablet {
+        display: block;
+    }
+
+    img#id_impressor {
+        display: none;
+    }
+
+    img#id_pc {
+        display: none;
+    }
+
+    img#id_tv {
+        display: none;
+    }
+}
+
+/*desktop: de 992px até 1200px*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    img#id_fone {
+        display: none;
+    }
+
+    img#id_tablet {
+        display: none;
+    }
+
+    img#id_impressor {
+        display: none;
+    }
+
+    img#id_pc {
+        display: block;
+    }
+
+    img#id_tv {
+        display: none;
+    }
+}
+
+/*tv ou grandes telas: acime de 1200px
+
+para isso funcionar altera a resoluçao */
+@media screen and (min-width:1200px) {
+
+    body {
+    background-image: url(../img/back-tv.jpg);
+    }
+
+    img#id_fone {
+        display: none;
+    }
+
+    img#id_tablet {
+        display: none;
+    }
+
+    img#id_impressor {
+        display: none;
+    }
+
+    img#id_pc {
+        display: none;
+    }
+
+    img#id_tv {
+        display: block;
+    }
+
+    main {
+        width: 700px;
+    }
+
+}
+
+/*para impressores*/
+@media print {
+
+    * {
+         font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+    background-image: url(../img/back-print.jpg); /*isso é desnecessario porque na impressao, o impressor nao pode imprimir o background do body*/
+    }
+
+    
+    main {
+         border: 3px solid black;
+         width: 90vw;
+         }
+
+    main h1 {
+         text-shadow: none;
+         color:black
+    }
+
+    main::after {
+         content: 'Essa impressao foi feita atraves do site www.cursoemvideo.com';
+         text-decoration: overline;
+         }
+
+    img#id_fone {
+        display: none;
+    }
+
+    img#id_tablet {
+        display: none;
+    }
+
+    img#id_impressor {
+        display: block;
+    }
+
+    img#id_pc {
+        display: none;
+    }
+
+    img#id_tv {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>
+    Funçoes
+</h1>
+
+        <!--o elemento que quebra linhas-->
+    <br>
+
+        <!--o elemento que cria uma linha horizontal-->
+    <hr>
+
+
+    <h2> 
+        Representando código de computador
+    </h2>
+
+        <!--Existem vários elementos disponíveis para marcar código de computador usando HTML: 
+            • <code>: Para marcar partes genéricas de código de computador. 
+
+            • <pre>: Para reter espaço em branco (geralmente blocos de código) — se você usar recuo ou espaço em branco em excesso no seu texto, os navegadores o ignorarão e você não o verá na sua página renderizada. Se você envolver o texto nas tags <pre></pre> seu espaço em branco será renderizado de forma idêntica à maneira como você o vê no seu editor de texto. 
+
+            • <var>: Para marcar especificamente nomes de variáveis. 
+
+            • <kbd>: Para marcar a entrada do teclado (e outros tipos) inserida no computador. 
+
+            • <samp>: Para marcar a saída de um programa de computador.-->
+
+    <pre>
+        <code>var para = document.querySelector('p'); 
+ 
+        para.onclick = function() { 
+        alert('Owww, stop poking me!'); }</code>
+    </pre> 
+ 
+    <p> 
+        You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>. 
+    </p> 
+ 
+    <p> 
+        In the above JavaScript example, <var>para</var> represents a paragraph element. 
+    </p> 
+ 
+    <p>
+        Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.
+    </p> 
+ 
+    <pre>
+        $<kbd>ping mozilla.org</kbd> 
+        <samp>
+            PING mozilla.org (63.245.215.20): 56 data bytes 
+            64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
+        </samp>
+    </pre> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento das div ou box</title>
+    <style>
+        #container {
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+
+            /*a div principal deve ter esta declaraçao*/
+            position: relative;
+            
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+             /*valores traslate
+                    primeiro valor 
+            50px parar direita
+            -50px para esquerda
+                    segundo valor
+            70px para baixo
+            -70px para cima*/
+            transform: translate(50px, 70px);
+        
+
+
+        }
+
+        #container2 {
+            height: 96vh;
+            padding: 10px;
+            background-color: blue;
+
+            background-image: url('img/target001.png');
+            background-size: 100% 100%;
+
+            /*a div principal deve ter esta declaraçao*/
+            position: relative;
+            
+        }
+
+        #conteudo2 {
+            height: 200px;
+            width: 400px;
+            background-color: white;
+            
+
+            /*Mover as div conteudos*/
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /*valores traslate 
+            50% parar direita
+            -40% para esquerda
+            50% para baixo
+            -40% para cima*/
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+
+    </section>
+    
+    <pre>
+
+    </pre>
+
+    <h1 style="text-align: center;">Container2 e conteudo2</h1>
+
+     <pre>
+
+    </pre>
+
+     <section id="container2">
+        <article id="conteudo2"></article>
+
+    </section>
+ 
+
+</body>
+</html>

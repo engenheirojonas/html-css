@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+
+    <!--
+
+    criar iframes muito seguro
+    
+    -->
+    <h1>Meu site principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias quam magni, in suscipit repellat nam molestias accusamus tempore possimus sint, autem sapiente quia beatae. Earum alias nostrum saepe eligendi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde itaque sequi quisquam, placeat laudantium sit maxime necessitatibus, inventore exercitationem blanditiis sint officia vero, laborum dolor optio amet dignissimos magnam.
+    </p>
+
+    <!--
+    o parametros parametros para aumentar segurança usando os iframes
+
+    sandbox
+        (valores)
+            "sandbox"
+                o conteudo do iframe sera estatico e nao vai registrar nem submeter nada na base de dados da pagina do site que colocamos no nosso iframe.
+                esse valor é sinónimo da segurança máxima
+            "allow-same-origin"
+            "allow-forms"
+            "allow-script"
+
+            ou podemos colorcar assim
+            "allow-same-origin allow-forms allow-script"
+    referrerpolicy
+        (valores)
+            "no-referrer"
+                quere dizer o conteudo que esta carregado dentro do iframe nao vai coletar nenhuma informaçao
+    -->
+    
+    <iframe src="iframe_006a.html" sandbox="sandbox" referrerpolicy="no-referrer-when-downgrade">
+        o seu navegador nao é compativel com isso.
+    </iframe>
+
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias quam magni, in suscipit repellat nam molestias accusamus tempore possimus sint, autem sapiente quia beatae. Earum alias nostrum saepe eligendi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum unde itaque sequi quisquam, placeat laudantium sit maxime necessitatibus, inventore exercitationem blanditiis sint officia vero, laborum dolor optio amet dignissimos magnam.
+    </p>
+</body>
+</html>

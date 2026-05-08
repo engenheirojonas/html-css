@@ -1,0 +1,15 @@
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14pt;
+    color:	rgb(217, 239, 240);
+    background-color:	rgb(93, 93, 94);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    font-size: 20pt;
+    color:	rgb(2, 3, 3);
+}
+

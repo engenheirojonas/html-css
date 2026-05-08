@@ -1,0 +1,22 @@
+
+body	{
+			font-family: "Helvetica",	"Lucida	Grande",	sans-serif;
+			color: #3D3D3D;
+		}
+	
+
+body {
+background-image: url(img1.webp);
+}
+	
+
+h2	{
+		border-bottom: 2px	solid	black;
+	}
+	
+
+figure	{
+			text-align:	center;	
+			background-color:	whitesmoke;
+			border: 1px	solid	lightgrey;
+	}

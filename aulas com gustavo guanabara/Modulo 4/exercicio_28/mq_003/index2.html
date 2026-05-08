@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media all {
+                * {
+                padding: 0px;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+
+                html, body {
+                width: 100vw;
+                height: 100vh;
+                background-color: #233eff;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                }
+
+                h1 {
+                    color: white;
+                    text-shadow: 3px 3px 0px #1526a7;
+                    padding: 10px;
+                }
+            }
+
+        /*as minhas declaraçoes retrato*/
+        @media screen and (orientation:portrait) {
+                    
+                body {
+                background-color: darkgray;
+                }
+            }
+
+        /*as minhas declaraçoes paisagem*/
+        @media screen and (orientation:landscape) {
+
+                    body {
+                    background-color: darkred;
+                    }
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Mude a orientaçao do seu telefone ou da janela do teu navegador e a cor vai mudar</h1>
+     
+</body>
+</html>

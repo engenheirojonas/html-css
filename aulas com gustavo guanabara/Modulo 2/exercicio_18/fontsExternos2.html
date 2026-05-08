@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas </title>
+
+    <style>
+
+        /*site para importar as fontes dum ficheiro que podes abaixar
+        a regra é        @font-face         
+        
+        primeiro vamos abaixar a font num site como dafont.com
+        */
+        
+        @font-face {
+            font-family: Dk_Jambo;
+            src: url(fonts/Dk\ Jambo.otf) format('opentype');
+
+                /*Tipos de formatos
+                        - opentype (otf)
+                        - truetype (ttf)
+                        - embedded-opentype
+                        - truetype-aat (Apple advanced typography)
+                        - svg
+                 */
+
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        /*de preferencia usares dois tipos de formatos desta regra porque depende de navegador
+        
+         @font-face {
+            font-family: Dk_Jambo;
+            src: url(fonts/Dk\ Jambo.otf) format('opentype'), url(fonts/Dk\ Jambo.otf) format('truetype');
+
+                /*Tipos de formatos
+                        - opentype (otf)
+                        - truetype (ttf)
+                        - embedded-opentype
+                        - truetype-aat (Apple advanced typography)
+                        - svg
+        }
+
+        */
+
+
+        /*Atençao 
+        sempre podemos abaixar o ficheiro das fontes, é so acessar nos sites das fontes e abaixar a fonte que pretendemos
+
+        para conhecer fonts usado num site, devemos usar a extensao     fonts ninja     da google
+
+        assim podemos conhecer detalhes das fontes e pesquisar no font.google.com ou no dafont.com
+        
+        */
+
+
+
+
+        body {
+            font-size: 16px; 
+            font-style: normal; 
+           
+        }
+
+            /*presta atençao na font aplicado ao titulo*/
+
+        h1 {
+            font-family: 'Dk_Jambo';
+        }
+</style>
+
+    </style>
+</head>
+<body>
+        <h1>Titulo</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt adipisci cumque nihil vero nesciunt, nam dolore dignissimos harum, perspiciatis consequatur iusto voluptatem, aliquid alias voluptates. Cum ullam ad saepe soluta.
+        </p>
+
+</body>
+</html>

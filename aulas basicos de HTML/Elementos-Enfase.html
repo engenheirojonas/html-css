@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>negrito, itálico ou sublinhado</title>
+</head>
+<body>
+    
+
+    <h1>negrito, itálico ou sublinhado</h1>
+
+            <!-- italico para nomes científicos --> 
+    <p> 
+        O Colibri Ruby-throated (<i>Archilochus colubris</i>) é o colibri mais comum do Leste da América do Norte. 
+    </p> 
+ 
+            <!-- italicos para palavras estrangeiras --> 
+    <p> 
+        O menu era um mar de palavras exóticas como <i lang="uk-latn">vatrushka</i>, <i lang="id">nasi goreng</i> e <i lang="fr">soupe à l'oignon</i>. 
+    </p> 
+ 
+            <!-- um erro de ortografia conhecido --> 
+    <p> 
+        Algum dia eu vou aprender como <u style="text-decoration-line: underline; text-decoration-style: wavy;">jogar</u>melhor. 
+    </p> 
+ 
+            <!-- negrito para Destaque as palavras-chave em um conjunto de instruções --> 
+    <ol> 
+        <li><b>Fatie</b> dois pedaços de pão do pão.</li> 
+        <li><b>Colocar</b> uma fatia de tomate e uma folha de alface entre as fatias de pão. </li>
+    </ol>
+
+            <!--HTML5 a redéfini <b>, <i> et <u> avec de nouveaux rôles sémantiques, parfois déroutants. 
+                Voici la meilleure règle à retenir : il n'est approprié d'utiliser <b>, <i> ou <u> pour transmettre un sens traditionnellement véhiculé par le gras, l'italique ou le soulignement que lorsqu'il n'existe pas d'élément plus adapté ; et il y en a généralement un. Demandez-vous si <strong>, <em>, <mark> ou <span> ne seraient pas plus appropriés. -->
+
+    <h1><em>Accent</em> et <strong>importance</strong></h1> 
+    <p> 
+        Ma nouvelle machine à café s'appelle <strong>La Percolatrice 2000</strong>. Elle produit le café le plus <em>sublime</em> et <em>merveilleux</em>. 
+    </p> 
+    <p> 
+        En plein hiver, il fera <strong>froid</strong>. Vous devriez vous <strong>couvrir pour éviter de <em>tomber malade</em></strong>. 
+    </p> 
+
+
+                    <!-- 
+                        • <i> est utilisé pour transmettre un sens traditionnellement véhiculé par l'italique : mots étrangers, désignation taxonomique, termes techniques, pensée… 
+
+                        • <b> est utilisé pour transmettre un sens traditionnellement véhiculé par le gras : mots-clés, noms de produits, phrase d'accroche… 
+
+                        • <u> est utilisé pour transmettre un sens traditionnellement véhiculé par le soulignement : nom propre, faute d'orthographe…-->
+                    
+
+            <!-- noms scientifiques --> 
+    <p> 
+        Le colibri à gorge rubis (<i>Archilochus colubris</i>) est le colibri le plus commun en Amérique du Nord-Est. 
+    </p> 
+ 
+            <!-- mots étrangers --> 
+    <p> 
+        Le menu était une mer de mots exotiques comme <i lang="uk-latn">vatrushka</i>, <i lang="id">nasi goreng</i> et <i lang="fr">soupe à l'oignon</i>. 
+    </p> 
+
+                    <!--Note : Les gens associent fortement le soulignement aux liens hypertextes. Par conséquent, sur le web, il vaut mieux ne souligner que les liens. Utilisez l'élément <u> lorsqu'il est sémantiquement approprié, mais pensez à utiliser du CSS pour modifier le soulignement par défaut afin qu'il soit plus adapté au web. L'exemple ci-dessous illustre comment cela peut être fait. -->
+
+        <!-- faute d'orthographe connue --> 
+    <p>
+        Un jour j'apprendrai à <u class="spelling-error">spel</u> correctement.
+    </p> 
+ 
+        <!-- terme défini lorsqu'il est utilisé dans une définition --> 
+    <dl> 
+        <dt>HTML sémantique</dt> 
+            <dd> 
+                Utilisez les éléments en fonction de leur signification <b>sémantique</b>, et non de leur apparence. 
+            </dd> 
+    </dl> 
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #f1D8c9, #f2c3f2);
+}
+
+main {
+    background-color:white; 
+    Width: 60%;
+    padding: 10px;
+    margin: auto;
+
+    /*arredonda os cantos da tag*/
+    border-radius: 5%;
+
+    /*sombra na tag* : valores: esquerda baixo e espalhar e cor*/
+    box-shadow: 5px 5px px rgba(136,109,93,0.616);
+}
+
+p {
+        /*Centraliza e ajusta automaticamente a tag deste seletor*/
+    text-align: justify;
+}
+
+h1 {
+    color: darkgoldenrod;
+    text-align: center;
+
+    /*sombra na tag* : valores: esquerda baixo e espalhar e cor*/
+    text-shadow: 1px 1px 2px rgba(129,77,5,0.726);
+}
+
+h2 {
+    color: #125189;
+}

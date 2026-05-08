@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    
+    <h1 id="myLINK_001">Imagem como link</h1>
+
+    <h2>logo quando voce clicar nessa foto voce iras para a minha pagina facebook</h2>
+
+        <!--logo quando voce clicar nessa imagem voce iras para a minha pagina facebook-->
+    <a href="https://www.facebook.com"> 
+        <img src="Eu.jpg" alt="minha foto que liga a página inicial do facebook" /> 
+    </a> 
+
+
+    <h2>Ficheiro em outras pastas</h2>
+        <!-- Movendo-se de volta para os diretórios pai: se você quisesse incluir uma hiperlink dentro do teu projeto mas que esta em um arquivo distante, você precisaria subir um nível de diretório.
+          "Subir um diretório" é indicado usando dois pontos .. depois insere / 
+          então a URL ou path que você usaria e da pasta pai da pasta onde se encotra este documento html-->
+
+    <p>
+        Um link para o meu <a href="../Experimento-Elemento-LINK.html"> breve de projeto</a>. 
+    </p>     
+
+
+
+
+
+
+    <h2>Fragmentos de documento</h2> 
+
+
+        <!--É possível vincular a uma parte específica do mesmo ou dum outro documento HTML, esse ato é conhecido como um "fragmento de documento" e não apenas ao topo do documento. Para fazer isso, primeiro você deve atribuir um atributo "id" ao elemento ao qual deseja vincular dentro ou fora do documento-->
+
+        <h3> vinculo com fragamento dum outro documento</h3>
+        
+
+    <p> 
+            <!--nao esqueça de colocar o id do elemento da pagina que queremos acessar apos a extensao html seguido do sinal # e entao o id, neste caso o id do h3 intutulado diferenciais na pagina html no diretorio pai, use o path ou url -->
+
+        Quer Conhecer os diferenciais do musicdoc? Use nosso <a href="../Experimento-Elemento-LINK.html#dif001">este link</a>.
+
+                <!--para ver os resultados zooma a pagina web ou procura uma pagina html sua que tem tanto conteudo-->
+    </p>
+
+        
+    <h3>vinculo com fragamento do mesmo documento</h3>
+    <p> 
+        Veja a minha imagem que leva ao meu  <a href="#myLINK_001">facebook</a>.
+
+            <!--
+        aqui myLink_001 refere se ao id tag h1
+        deste documento html.
+        na referencia podemos colocar # e o id ou podemos primeiro colocar o nome do deste nosso ficheiro html com a extensao html seguido de # e o id exemplo tambem funciona
+        <a href="Elemento-LINK.html#myLINK_001">facebook</a>-->   
+    </p>
+
+
+    <h3>Use o atributo de download ao vincular a um download </h3>
+        <!--Quando você está apontando para um arquivo que deve ser baixado em vez de ser aberto primeiro pelo navegador, poderá usar o atributo de download para fornecer um nome de arquivo salvo padrão. Aqui está um exemplo, com um link de baixar para a versão do Windows 39 do Firefox:-->>
+        <a 
+            href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+            download="firefox-39-installer.exe"> Faça o download do Firefox 39 para Windows
+
+            <!--este href pode ser copiado apartir da net
+            E note tambem a inserçao do atributo download-->
+        </a>
+
+
+
+
+
+        
+
+        <!--Atençao abaixo, isso ainda nao funcionou aqui, tenho de procurar saber por que-->
+
+    <h3>Links de e-mail </h3>
+        <a href="mailto:nowhere@mozilla.org">Enviar email para nenhum lugar</a> 
+
+        <br>
+
+        <a href="mailto:giona247.mg@gmail.com">Enviar email para mim Jonas Sambo</a> 
+
+        <br>
+        
+        <a 
+            href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"> Aqui está um exemplo, incluindo um cc, bcc, assunto e corpo: 
+        </a> 
+
+   
+
+</body>
+</html>
