@@ -8,10 +8,23 @@
 
         /*FLEX BOX
         
-        configuraçoes somente 
+        configuraçoes somente para o container ou o pai
         
         flex-direction
             - padrao: row (linha)da  esquerda para direita
+            - row-reverse : de direita para esquerda os itens se encaixarao no container de direita para esquerda
+            - column : para disposiçao vertical do container os itens vao se encaixar de cima para baixo
+            - column-reverse : disposiçao vertical, os itens vao se encaixar de baixo para cima.
+
+        Eixos
+            * main-axis (eixo principal: de esquerda para direita)
+                - main-start
+                - main-end
+            * cross-axis (eixo transversal: de cima para baixo)
+                - cross-start
+                - cross-end
+            
+            os eixos se adaptam as direcçoes do FLEX-DIRECTION  quer dizer os valores : column, row, e seus reverse. redefiniem a localização dos eixos.
 
        */
 
@@ -21,14 +34,14 @@
 
             /*o container tem o display flex*/
             display: flex;
+
+            /*Direcçao do container*/
+            flex-direction: column; /*row; row-reverse; column; column-reverse*/
         }
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-
-            /*o item tem o flex auto*/
-            flex: auto;
         }
 
     </StyLe>

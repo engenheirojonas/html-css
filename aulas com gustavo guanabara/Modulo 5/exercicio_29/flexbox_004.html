@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <StyLe>
+
+        /*FLEX BOX
+
+         configuraçoes somente para o container ou o pai
+         
+         empacotamento ou encapsulamento
+
+ 
+            Flex-flow
+                a propriedade flex-flow é o short hand que junta "flex-direction" + "flex-wrap"
+
+                    flex-flow: 
+        
+            elemento filho ou item
+                coloca a propriedade    
+                    flex:auto  
+                para nao deixar espaço em branco
+        */
+
+        div.container {
+            background-color: lightsalmon;
+
+            /*o container tem o display flex*/
+            display: flex;
+            
+            flex-flow: row wrap;
+            /*para usar o valor column wrap, definie um valor (exemplo 100px) da propriedade height do elemento pai ou container*/
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;
+        }
+
+    </StyLe>
+</head>
+<body>
+    <div class="container">
+        <div class="item">exemplo de boco A</div>
+        <div class="item">exemplo de boco B</div>
+        <div class="item">exemplo de boco C</div>
+        <div class="item">exemplo de boco D</div>
+        <div class="item">exemplo de boco E</div>
+        <div class="item">exemplo de boco F</div>
+        <div class="item">exemplo de boco G</div>
+    </div>
+</body>
+</html>

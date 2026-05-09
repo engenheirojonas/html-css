@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <StyLe>
+
+        /*FLEX BOX
+
+         configuraçoes somente para o container ou o pai
+         
+         empacotamento ou encapsulamento
+
+            Flex-Wrap:
+                valor padrao é nowrap
+                    logo ao ajustar o container, o tamanho do container vai depender muito do conteúdo, os itens vao reduzindo automaticamente os seus tamanhos.
+        
+                Flex-Wrap: wrap
+                    wrap quere dizer quebra de linha. o elemento transbordado vai a baixo ou cross-axis
+            
+                Flex-Wrap: wrap-reverse
+                    oposto do wrap. o ultimo elemnento transbordado vai para cima ou no sentido do eixo transversal. 
+
+        */
+
+        div.container {
+            background-color: lightsalmon;
+
+            /*o container tem o display flex*/
+            display: flex;
+            flex-direction: row; /*row; row-reverse; column; column-reverse*/
+            flex-wrap: nowrap;  /*wrap; wrap-reverse*/
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </StyLe>
+</head>
+<body>
+    <div class="container">
+        <div class="item">exemplo de boco A</div>
+        <div class="item">exemplo de boco B</div>
+        <div class="item">exemplo de boco C</div>
+        <div class="item">exemplo de boco D</div>
+        <div class="item">exemplo de boco E</div>
+        <div class="item">exemplo de boco F</div>
+        <div class="item">exemplo de boco G</div>
+    </div>
+</body>
+</html>
