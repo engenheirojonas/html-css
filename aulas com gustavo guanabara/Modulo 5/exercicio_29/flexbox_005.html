@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <StyLe>
+
+        /*FLEX BOX
+
+         configuraçoes somente para o container ou o pai
+         
+         empacotamento ou encapsulamento
+
+        Justify-content
+            vai fazer o alinhamento em relaçao ao eixo principal ou o main-axis
+
+            valores
+                flex-start:
+                    o primeiro item vai ficar grudado ao main-start e o espaço em branco ficara ao lado do main-end caso nao se use flex:auto nos itens
+                
+                flex-end:
+                    o primeiro item vai ficar grudado ao main-end e o espaço em branco ficara ao lado do main-start caso nao se use flex:auto nos itens
+
+                Center
+                    os itens serao agrupado no center, ou no centro do container, e os espaços em branco vao ser distribuidos igualmente no main-start e no main-end
+                
+                space-between
+                    muito interessante. ele coloca o primeiro item no main-start e o ultimo item no main main-end enquanto que todos os outros itens vao estar no meio com um espaçamento igual.
+
+                space-evenly
+                    vai criar um espacinho igual entre os itens incluindo antes do main-star e depois do main-end
+
+                space-around
+                    quase igual com o space-evenly com a unica diferncia seguinte, o space-around centraliza o enquadramento dos itens adicionando  novos espacinho a volta dos itens
+
+        align-items
+                para os cross-axis ou eixo transversal
+                valores
+
+                    stretch (é o valor padrao desta propriedade)
+                        aumenta automaticamente a largura dos items. isso é esticar
+
+                    flex-start
+                        os items estarao grudados ou colados no eixo do cross-start do eixo transversal
+                    
+                    flex-end
+                        os items estarao grudados ou colados no eixo do cross-end ou final do eixo transversal
+                    
+                    center
+                        os items estarao centralizados verticalmente falando, havera espaço no inicio e no fim do cross-axis
+        */
+
+        div.container {
+            background-color: lightsalmon;
+            height: 200px;
+            /*o container tem o display flex*/
+            display: flex;      
+            flex-flow: row wrap;
+        
+
+            
+            justify-content: space-evenly;
+            align-items: center;
+
+
+
+        }
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </StyLe>
+</head>
+<body>
+    <div class="container">
+        <div class="item">exemplo de boco A</div>
+        <div class="item">exemplo de boco B</div>
+        <div class="item">exemplo de boco C</div>
+        <div class="item">exemplo de boco D</div>
+        <div class="item">exemplo de boco E</div>
+        <div class="item">exemplo de boco F</div>
+        <div class="item">exemplo de boco G</div>
+    </div>
+</body>
+</html>
